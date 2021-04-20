@@ -1,6 +1,6 @@
 .form {
     margin-top: 42px;
-    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,5 +25,15 @@
         &::placeholder {
             color: rgba($color: $white, $alpha: .4);
         }
+        &:invalid {
+            border: 2px solid $error;
+        }
+    }
+    span {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $error;
     }
 }

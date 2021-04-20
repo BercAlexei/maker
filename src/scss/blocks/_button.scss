@@ -1,7 +1,7 @@
 .button {
     width:140px;
     height: 48px; 
-    background: $blue;
+    background-color: $blue;
     border: none;
     border-radius: 24px;
     font-weight: 800;
@@ -9,4 +9,10 @@
     line-height: 15px;
     text-align: center;
     color: #093F68;
+    transition: all .3s;
+    &:hover {
+        border: 2px solid $blue;
+        color: $white;
+        background-color: inherit;
+    }
 }
