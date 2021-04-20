@@ -1,0 +1,20 @@
+.pricing {
+    padding-top: 202px;
+    &__descr {
+        width: 540px;
+        margin: 24px auto 0 auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $gray;
+    }
+    
+    &__tabs {
+        margin-top: 105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

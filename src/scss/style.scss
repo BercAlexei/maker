@@ -1,0 +1,29 @@
+@import 'base/libs';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/animation';
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+html, body {
+    background-color: $bg;
+}
+
+.container {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/pricing';
+@import 'blocks/card';
+@import 'blocks/subscription';
+@import 'blocks/form';
+@import 'blocks/button';
+
+@import 'base/media';

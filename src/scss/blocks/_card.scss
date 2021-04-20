@@ -1,0 +1,127 @@
+.card {
+    position: relative;
+    border-radius: 8px;
+    &_left {
+        background-color: #093F68;
+        padding: 48px 38px;
+        margin-right: 30px;
+        width:445px;
+        height: 425px;
+    }
+    &_right {
+        width:445px;
+        height:449px;
+        background-color: $blue;
+        padding: 61px 38px;
+    }
+
+    &__icon {
+        &_left {
+            position: absolute;
+            top: -23px;
+            left: 38px;
+        }
+        &_right {
+            position: absolute;
+            top: -33px;
+            left: 37px;
+        }
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 800;
+        &_left {
+            color: $white;
+        }
+        &_right {
+            color: $bg;
+        }
+    }
+
+    &__descr {
+        margin-top: 19px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+
+        &_left {
+            color: rgba($color: $white, $alpha: .6);
+        }
+        &_right {
+            color: rgba($color: $bg, $alpha: .6);
+        }
+    }
+
+    &__price {
+        margin-top: 24px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 55px;
+
+        &_left {
+            color: $white;
+        }
+        &_right {
+            display: flex;
+            align-items: center;
+            color: $bg;
+            margin-right: 7.5px;
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 15px;
+                color: rgba($color: $bg, $alpha: .6);
+            }
+        }
+    }
+
+    &__pluses {
+        margin: 0;
+        padding: 0;
+        padding-left: 27px;
+        margin-top: 19px;
+        list-style: none;
+        li {
+            position: relative;
+            margin-bottom: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: '';
+                width: 12px;
+                height: 9px;
+                position: absolute;
+                top: 7px;
+                left: -27px;
+                display: block;
+            }
+        }
+        &_left {
+            li {
+                color: $white;
+                &:before { 
+                    background: url(../icons/price/check_blue.png) center center / cover no-repeat;
+                }
+
+            }
+        }
+        &_right {
+            li {
+                color: $bg;
+                &:before { 
+                    background: url(../icons/price/check_blue_dark.png) center center / cover no-repeat;
+                }
+            }
+        }
+    }
+
+}

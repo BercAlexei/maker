@@ -1,0 +1,21 @@
+.title {
+    &_big {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: $white;
+        span {
+            color: $blue;
+        }
+    }
+
+    &_small {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: $white;
+    }
+}
