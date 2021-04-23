@@ -12,41 +12,34 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
 
-    function validateError() {
-        input.style.border = '2px solid #FF2965'
-        span.style.color = '#FF2965'
-        span.style.display = 'block';
+    function validateError(display, color) {
+        input.style.border = `2px solid ${color}`
+        span.style.color = color
+        span.style.display = display
     }    
-
-    function validateTrue() {
-        span.style.display = 'block';
-        span.style.color = '#3EE9E5'
-        input.style.border = '2px solid #3EE9E5'
-        
-    }
 
     function validate() {
         switch (true) {
 
             case input.validity.valueMissing : 
-            validateError();
-            span.textContent = message.empty;
-            break;
+                validateError('block', '#FF2965');
+                span.textContent = message.empty;
+                break;
 
             case input.validity.typeMismatch : 
-            validateError();
-            span.textContent = message.notСorrect;
-            break;
+                validateError('block', '#FF2965');
+                span.textContent = message.notСorrect;
+                break;
 
             default :
-            span.textContent = message.done;
-            validateTrue()
+                span.textContent = message.done;
+                validateError('block', '#3EE9E5');
 
-            setTimeout(() => {
-                span.style.display = '';
-                input.style.border = '';
-                form.reset();
-            }, 2000)
+                setTimeout(() => {
+                    span.style.display = '';
+                    input.style.border = '';
+                    form.reset();
+                }, 2000)
         }
     }
     
