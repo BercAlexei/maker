@@ -1,6 +1,115 @@
 @media (max-width: 1200px) {}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+    .title {
+        &_big {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &_small {
+            font-size: 24px;
+        }
+    }
+    .promo {
+        min-height: 515px;
+        padding-top: 48px;
+        &__bg {
+            top: 158px;
+            height: 357px;
+            img {
+                margin-right: 45px;
+            }
+        }
+        &__center {
+            height: 268px;
+        }
+        &__text {
+            margin-top: 138px;
+            max-width: 457px;
+            &:before, &:after  {
+                bottom: -74px;
+            }  
+            &:before { 
+                bottom: -49px;
+            }
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .advantages {
+        padding-top: 110px;
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            width: 515px;
+            margin-right: 0;
+            flex-direction: row;
+            align-items: center;
+            &:nth-child(3) {
+                margin-top: 40px;
+            }
+            &:nth-child(even) {
+                margin-top: 40px;
+                margin-left: -60px;
+            }
+        }
+        &__icon {
+            min-width: 120px;
+            height: 124px;
+            img {
+                max-width: 66px;
+            }
+        }
+        &__text {
+            margin-left: 55px;
+            margin-top: 0;
+        }
+        &__descr {
+            margin-top: 11px;
+        }
+    }
+
+    .pricing {
+        padding-top: 141px;
+        &__tabs {
+            margin-top: 79px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .card {
+        &_left {
+            margin-right: 0;
+        }
+        &_right {
+            margin-top: 65px;
+        }
+    }
+    .subscription {
+        padding: 135px 0 119px 0;
+        background: url(../img/bg_footer.png) center center no-repeat;
+    }
+    .form {
+        margin-top: 29px;
+    }
+    .button {
+        &:hover{
+            border: none;
+            color: $dark_blue;
+            background-color: $blue;
+        }
+    }
+}
 
 @media (max-width: 768px) {}
 

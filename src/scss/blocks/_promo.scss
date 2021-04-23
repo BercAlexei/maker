@@ -5,33 +5,33 @@
     overflow: hidden;
     &__bg {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 212px;
-        max-height: 459px;
-        width: 1553px;
-        height: 459px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 212px;
+        height: 459px;
         img {
             max-height: 100%;
+            margin-right: 100px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
     &__center {
-        position: absolute;
-        top: -8px;
-        left: 50%;
-        transform: translateX(-50%);
-        max-height: 378px;
+        position: relative;
+        top: -47px;
+        height: 357px;
     }
     
     &__text {
-        position: absolute;
+        position: relative;
         z-index: 2;
         margin-top: 185px;
         text-align: center;
-        width: 540px;
+        max-width: 540px;
         left: 50%;
         transform: translateX(-50%);
         &:before, &:after  {
