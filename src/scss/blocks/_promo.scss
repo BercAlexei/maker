@@ -10,7 +10,7 @@
         align-items: center;
         left: 50%;
         transform: translateX(-50%);
-        top: 212px;
+        bottom: 0;
         height: 459px;
         img {
             max-height: 100%;
@@ -20,6 +20,7 @@
             }
         }
     }
+    
     &__center {
         position: relative;
         top: -47px;

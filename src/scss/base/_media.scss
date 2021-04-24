@@ -17,7 +17,6 @@
         min-height: 515px;
         padding-top: 48px;
         &__bg {
-            top: 158px;
             height: 357px;
             img {
                 margin-right: 45px;
@@ -111,6 +110,40 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 40px;
+        height: 730px;
+        &__bg {
+            top: 142px;
+            height: 318px;
+            justify-content: center;
+            img {
+                margin-right: 35px;
+            }
+        }
+        &__center {
+            display: none;
+        }
+        &__text {
+            margin-top: 402px;
+        }
+    }
+
+    .advantages {
+        padding-top: 100px;
+        &__item {
+            &:nth-child(even) {
+                margin-left: 0;
+            }
+        }
+    }
+    .pricing {
+        padding-top: 120px;
+    }
+    .subscription {
+    
+    }
+}
 
 @media (max-width: 576px) {}
