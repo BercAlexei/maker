@@ -96,7 +96,6 @@
     }
     .subscription {
         padding: 135px 0 119px 0;
-        background: url(../img/bg_footer.png) center center no-repeat;
     }
     .form {
         margin-top: 29px;
@@ -131,7 +130,7 @@
     }
 
     .advantages {
-        padding-top: 100px;
+        padding-top: 144px;
         &__item {
             &:nth-child(even) {
                 margin-left: 0;
@@ -139,11 +138,60 @@
         }
     }
     .pricing {
-        padding-top: 120px;
+        padding-top: 144px;
     }
-    .subscription {
-    
-    }
+
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .header {
+        justify-content: center;
+    }
+    .promo {
+        height: 764px;
+        &__text {
+            width: 90%;
+            margin-top: 346px;
+        }
+        &__bg {
+            height: 233px;
+            top: 140px;
+        }
+    }
+    .advantages {
+        &__item {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__text {
+            margin: 0;
+            text-align: center;
+            margin-top: 32px;
+        }
+    }
+    .card {
+        width: 100%;
+    }
+    .subscription {
+        object-fit: contain;
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%;
+        &__error {
+            margin: 0;
+            margin-bottom: 24px;
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .button {
+        width: 100%;
+
+    }
+
+}

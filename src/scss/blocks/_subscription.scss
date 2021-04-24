@@ -1,4 +1,10 @@
 .subscription {
-    padding: 151px 0 117px 0;
-    background: url(../img/bg_footer.png) center center no-repeat;
+    position: relative;
+    padding: 203px 0 130px 0;
+    img {
+        position: absolute;
+        top: 151px;
+        width: 100%;
+        max-height: 228px;
+    }
 }

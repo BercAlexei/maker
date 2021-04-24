@@ -6,10 +6,10 @@
         background-color: #093F68;
         padding: 48px 38px;
         margin-right: 30px;
-        height: 425px;
+        min-height: 425px;
     }
     &_right {
-        height:449px;
+        min-height:449px;
         background-color: $blue;
         padding: 61px 38px;
     }
